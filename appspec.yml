@@ -28,3 +28,7 @@ hooks:
     - location: server_stop.sh
       timeout: 20
       runas: ec2-user
+  ValidationHook:
+    -location: server_timer.sh
+    timeout: 20
+    runas: ec2-user
